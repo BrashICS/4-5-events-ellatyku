@@ -11,16 +11,31 @@
     <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
     <link href="style.css" rel="stylesheet" type="text/css" />
 
-    <!-- Load the script with the 'defer' attribute -->
-    <script src="script.js" defer></script>
+    <!-- Don't forget to load the script file! -->
+
 </head>
 
 <body>
-    <h1>Interaction in HTML using JavaScript</h1>
+    <h1>Events in HTML</h1>
 
-    <div>
-        <button id="add_click_btn">Click Me</button>
-        <div>I have been clicked <span id="click_count">0</span> times.</div>
+    <h4>The 'click' event.</h4>
+    <div id="hidden_text" hidden>This <code>div</code> can be hidden and shown by clicking the button above. That uses
+        the "click" event.</div>
+    <button id="show_message">Show Hidden Text</button>
+    
+    <hr>
+
+    <h4>Some Mouse Events (there are more)</h4>
+    <div class="mouse">
+        <h3 class="mouse">Mouseover event triggered: <span></span></h3>
+    </div>
+
+    <div class="mouse">
+        <h3 class="mouse">Mouseenter event triggered: <span></span></h3>
+    </div>
+
+    <div class="mouse">
+        <h3 class="mouse">Mousemove event triggered: <span></span></h3>
     </div>
 
     <div class="footer">
