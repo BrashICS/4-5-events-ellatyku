@@ -50,7 +50,7 @@ Almost _any_ element can react to a "click" event. This is when the user clicks 
 
 ### Keyboard Events ⌨️
 
-Similar to the mouse, [keyboard events]](https://www.w3schools.com/jsref/obj_keyboardevent.asp) are very popular. They are:
+Similar to the mouse, [the keyboard events](https://www.w3schools.com/jsref/obj_keyboardevent.asp) are very popular. They are:
 
 - `"keydown"`: A keyboard key is physically pressed down but not necessarily released.
 - `"keyup"`: A keyboard key is _released_ (going from pressed to not pressed).
