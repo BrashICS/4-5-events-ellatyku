@@ -4,7 +4,7 @@
  *
  * Make sure you read the lesson and watch the in-class demo.
  *
- * Author:
+ * Author: Ella Johnson
  */
 
 'use strict';
@@ -13,10 +13,13 @@
 document.getElementById("over").addEventListener("mouseover", over)
 document.getElementById("enter").addEventListener("mouseenter", enter)
 document.getElementById("move").addEventListener("mousemove", move)
+document.getElementById("btn_show_hide").addEventListener("click", peakaboo) 
+document.getElementById("door").addEventListener("click", open_close)
 
 let mouseover_count = 0;
 let mouseenter_count = 0;
 let mousemove_count = 0;
+let door_open = false;
 
 function over() {
   document.getElementById("over_span").innerText = ++mouseover_count;
@@ -28,4 +31,27 @@ function enter() {
 
 function move() {
   document.getElementById("move_span").innerText = ++mousemove_count;
+}
+
+function peakaboo() {
+  document.getElementById("hidden_text").hidden = !document.getElementById("hidden_text").hidden;
+}
+
+//or 
+//function peakaboo() {
+  //let hidden = document.getElementById("hidden_text").hidden;
+  //if(hidden) {
+   // document.getElementById("hidden_text").hidden = false;
+  //} else {
+   // document.getElementById("hidden_text").hidden = true;
+ // }
+//}
+
+function open_close() {
+  if (door_open) {
+  document.getElementById("door").src = "images/door_closed.png";
+  } else {
+    document.getElementById("door").src = "images/door_open.png";
+  }
+  door_open = !door_open; 
 }
