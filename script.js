@@ -14,7 +14,8 @@ document.getElementById("over").addEventListener("mouseover", over)
 document.getElementById("enter").addEventListener("mouseenter", enter)
 document.getElementById("move").addEventListener("mousemove", move)
 document.getElementById("btn_show_hide").addEventListener("click", peakaboo) 
-document.getElementById("door").addEventListener("click", open_close)
+document.getElementById("door").addEventListener("click",open_close)
+window.addEventListener("keydown", keydown)
 
 let mouseover_count = 0;
 let mouseenter_count = 0;
@@ -54,4 +55,8 @@ function open_close() {
     document.getElementById("door").src = "images/door_open.png";
   }
   door_open = !door_open; 
+}
+
+function keydown(){
+
 }
