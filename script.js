@@ -1,22 +1,31 @@
 /**
- * ICS3U - 4.4 Interaction with HTML
+ * ICS3U 4.5 - Events in HTML/JS
  * Mr. Brash 🐿️
  *
  * Make sure you read the lesson and watch the in-class demo.
  *
- * Author: Mr. Squirrel
+ * Author:
  */
 
 'use strict';
 
-document.getElementById("add_click_btn").addEventListener("click", increment);
+// Event Listeners and Globals
+document.getElementById("over").addEventListener("mouseover", over)
+document.getElementById("enter").addEventListener("mouseenter", enter)
+document.getElementById("move").addEventListener("mousemove", move)
 
-let counter = 0;
+let mouseover_count = 0;
+let mouseenter_count = 0;
+let mousemove_count = 0;
 
-function increment() {
-  counter++;
-  document.getElementById("click_count").innerText = counter;
-  return counter;
+function over() {
+  document.getElementById("over_span").innerText = ++mouseover_count;
 }
 
+function enter() {
+  document.getElementById("enter_span").innerText = ++mouseenter_count;
+}
 
+function move() {
+  document.getElementById("move_span").innerText = ++mousemove_count;
+}
